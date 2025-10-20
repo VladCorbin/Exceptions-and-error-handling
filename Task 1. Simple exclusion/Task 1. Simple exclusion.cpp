@@ -1,16 +1,18 @@
 ﻿#include <iostream>
 #include <string>
+#include <exception>
 #include <Windows.h>
 
 int function(std::string str, int forbidden_length) 
 {
     if (str.length() == forbidden_length) 
     {
-        throw "Вы ввели слово запретной длины! До свидания!";
+        throw ("Вы ввели слово запретной длины! До свидания!");
     }
     else
     {
         std::cout << "Длина слова \"" << str << "\" равна " << str.length() << std::endl;
+        return str.length();
     }
     
 }
@@ -37,11 +39,9 @@ int main()
             
             function(str, forbidden_length);
         }
-        catch (const char* err)
-        {
-            std::cout << err << std::endl;
-            break;
-        }
+        catch (const std::exception& e)
+    {
+        std::cout << e.what()<<std::endl;
     }
 
     return EXIT_SUCCESS;

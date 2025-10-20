@@ -3,5 +3,5 @@
 
 class Parallelogram : public Quadrilateral // ֿאנאככוכמדנאלל
 {
-public: Parallelogram();
+public: Parallelogram(const std::string& n, int a, int b, int c, int d, int A, int B, int C, int D);
 };

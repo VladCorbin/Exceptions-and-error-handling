@@ -1,16 +1,12 @@
 #include <iostream>
 #include "Quadrilateral.h"
 
-Quadrilateral::Quadrilateral() : Figure("„етырЄхугольник")
-{
-    sides[0] = 10; sides[1] = 20; sides[2] = 30; sides[3] = 40;
-    angles[0] = 50; angles[1] = 60; angles[2] = 70; angles[3] = 80;
-}
-
-Quadrilateral::Quadrilateral(const std::string& n, int a, int b, int c, int d, int A, int B, int C, int D) : Figure(n)
+Quadrilateral::Quadrilateral(const std::string& n, int a, int b, int c, int d, int A, int B, int C, int D) : Figure("„етырЄхугольник", 4)
 {
     sides[0] = a; sides[1] = b; sides[2] = c; sides[3] = d;
     angles[0] = A; angles[1] = B; angles[2] = C; angles[3] = D;
+
+    if ((A + B + C + D) != 180) throw std::runtime_error("”глы в сумме не дают 360!");
 }
 
 void Quadrilateral::print_info()

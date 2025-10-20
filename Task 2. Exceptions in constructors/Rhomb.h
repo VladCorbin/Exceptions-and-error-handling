@@ -3,5 +3,5 @@
 
 class Rhomb : public Quadrilateral // Ромб
 {
-public: Rhomb();
+public: Rhomb(const std::string& n, int a, int b, int c, int d, int A, int B, int C, int D);
 };

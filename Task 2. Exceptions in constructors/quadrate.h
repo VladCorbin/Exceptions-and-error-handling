@@ -3,5 +3,5 @@
 
 class quadrate : public Quadrilateral //  вадрат
 {
-public: quadrate();
+public: quadrate(const std::string& n, int a, int b, int c, int d, int A, int B, int C, int D);
 };
