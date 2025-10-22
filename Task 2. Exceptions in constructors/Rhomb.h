@@ -1,5 +1,6 @@
 #pragma once
 #include "Quadrilateral.h"
+#include "FigureError.h"
 
 class Rhomb : public Quadrilateral // Ромб
 {

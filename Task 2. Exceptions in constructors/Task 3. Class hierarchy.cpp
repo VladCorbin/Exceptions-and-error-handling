@@ -19,6 +19,8 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
+    
+
     try
     {
         Triangle tri; // базовый триугольник

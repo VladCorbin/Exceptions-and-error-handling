@@ -1,5 +1,6 @@
 #pragma once
 #include "Quadrilateral.h"
+#include "FigureError.h"
 
 class Rectangl : public Quadrilateral // Прямоугольник
 {

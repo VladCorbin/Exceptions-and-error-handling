@@ -1,13 +1,12 @@
 #include <iostream>
 #include "Triangle.h"
 
-
 Triangle::Triangle(const std::string& n, int a, int b, int c, int A, int B, int C) : Figure("“реугольник", 3)
 {
     sides[0] = a; sides[1] = b; sides[2] = c;
     angles[0] = A; angles[1] = B; angles[2] = C;
 
-    if ((A + B + C) != 180 ) throw std::runtime_error("”глы в сумме не дают 180!");
+    if ((A + B + C) != 180 ) throw Figure_err("”глы в сумме не дают 180!");
 }
 
 void Triangle::print_info()

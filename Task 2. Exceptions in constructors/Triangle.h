@@ -1,7 +1,7 @@
 #pragma once
-#include <string>
 #include "Figure.h"
 #include "print_q.h"
+#include "FigureError.h"
 
 class Triangle : public Figure // базовый треугольник
 {

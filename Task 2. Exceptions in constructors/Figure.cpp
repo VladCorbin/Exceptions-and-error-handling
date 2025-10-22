@@ -3,5 +3,5 @@
 
 Figure::Figure(const std::string& n, int num)
 {
-	if (num_sides == 0) throw std::runtime_error("Bad number of sides");
+	if (num_sides == 0) throw Figure_err("Bad number of sides");
 }

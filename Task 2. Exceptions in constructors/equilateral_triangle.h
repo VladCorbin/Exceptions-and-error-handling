@@ -1,5 +1,6 @@
 #pragma once
 #include "Triangle.h"
+#include "FigureError.h"
 
 class equilateral_triangle : public Triangle // Равносторонний треугольник
 {

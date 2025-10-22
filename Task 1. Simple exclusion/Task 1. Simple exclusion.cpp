@@ -7,7 +7,7 @@ int function(std::string str, int forbidden_length)
 {
     if (str.length() == forbidden_length) 
     {
-        throw ("Вы ввели слово запретной длины! До свидания!");
+        throw std::runtime_error("Вы ввели слово запретной длины! До свидания!");
     }
     else
     {
@@ -36,13 +36,13 @@ int main()
             std::cout << "Введите слово: ";
             std::cin >> str;
 
-            
             function(str, forbidden_length);
         }
         catch (const std::exception& e)
-    {
-        std::cout << e.what()<<std::endl;
+        {
+            std::cout << e.what() << std::endl;
+            break;
+        }
     }
-
     return EXIT_SUCCESS;
 }

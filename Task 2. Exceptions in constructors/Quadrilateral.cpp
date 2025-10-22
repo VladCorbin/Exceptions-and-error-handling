@@ -6,7 +6,7 @@ Quadrilateral::Quadrilateral(const std::string& n, int a, int b, int c, int d, i
     sides[0] = a; sides[1] = b; sides[2] = c; sides[3] = d;
     angles[0] = A; angles[1] = B; angles[2] = C; angles[3] = D;
 
-    if ((A + B + C + D) != 180) throw std::runtime_error("”глы в сумме не дают 360!");
+    if ((A + B + C + D) != 180) throw Figure_err("”глы в сумме не дают 360!");
 }
 
 void Quadrilateral::print_info()

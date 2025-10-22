@@ -1,5 +1,6 @@
 #pragma once
 #include "Triangle.h"
+#include "FigureError.h"
 
 class right_angled_triangle : public Triangle // Прямоугольный треугольник
 {

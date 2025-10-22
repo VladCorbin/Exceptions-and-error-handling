@@ -1,6 +1,7 @@
 #pragma once
 #include "Figure.h"
 #include "print_q.h"
+#include "FigureError.h"
 
 class Quadrilateral : public Figure // базовый четырёхугольник
 {
